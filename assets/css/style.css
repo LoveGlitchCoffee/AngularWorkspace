@@ -40,7 +40,7 @@ p {
 	margin-bottom: 12px; 
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 14px; 
+vv	font-size: 14px; 
 	line-height: 24px;
 	color: #384452; 
 	margin-top: 10px; 
@@ -241,7 +241,7 @@ a:focus {
 /* Portfolio Wrap */
 #portfoliowrap {
 	padding-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 	display: block;
 	text-align: center
 }
@@ -322,7 +322,7 @@ a:focus {
 
 /* clients logo */
 #cwrap {
-	background: #f7f7f7;
+	background: #000;
 	margin-top: 0px;
 	padding-top: 80px;
 	padding-bottom: 100px;
@@ -365,7 +365,7 @@ a:focus {
 #black {
 	background: #000000;
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 	padding-top: 25px;
 	padding-bottom: 25px;
 }

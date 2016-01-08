@@ -65,7 +65,7 @@
 	<div id="black">
 	  <div class="container">
 		<div class="row">
-		  <h3>Unnamed Stealth Game</h3>
+		  <h3>Ded-Lok</h3>
 		</div><!-- /row -->
 	  </div> <!-- /container -->
 	</div><!-- /blue -->
@@ -78,37 +78,58 @@
 	  <div class="row">
 
 		<div class="col-lg-10 col-lg-offset-1 centered">
-		  <iframe width="650" height="365" src="https://www.youtube.com/embed/videoseries?list=PLG3zsAcZEsLJ2lhulBpKkLYVxXyBosZ2I" frameborder="0" allowfullscreen></iframe>
+		  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+			  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			</ol>
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			  <div class="item active">
+				<img src="assets/img/portfolio/dedlok/dedlok1.png" alt="">
+			  </div>
+			  <div class="item">
+				<img src="assets/img/portfolio/dedlok/dedlok2.png" alt="">
+			  </div>
+			  <div class="item">
+				<img src="assets/img/portfolio/dedlok/dedlok3.png" alt="">
+			  </div>
+			</div>
+		  </div><! --/Carousel -->
 		</div>
-		
+
 		<div class="col-lg-5 col-lg-offset-1">
 		  <div class="spacing"></div>
-		  <h4>Unnamed Stealth Game</h4>
-		  <p>A stealth-platformer, where the player’s goal is to get to the next room. The player must find a way to get past the guards and find the key. There are multiple ways to get past the guards, either through sheer skill or utilising guard’s ‘weaknesses’.</p>
-		  <p>This was my first attempt at making a proper game, having attained appropriate skill level and understanding of scope.
-			The game is has only 2 levels and despite there being multiple ways to pass a level, it is relatively linear.</p>
-
+		  <h4>Ded-Lok</h4>
+		  <p>A simple shooter. You aim is to shoot the enemy whilst avoiding their ‘arrows’.
+			The game was written in Chip8, an assembly language that was used for the old <a href="https://en.wikipedia.org/wiki/COSMAC_VIP">COSMAC VIP</a>.
+			It is an entry to Octojam and can be seen as an entry here <a href="http://octojam.com/octojam-ii/games/ded-lok">octo-jam</a>.
+			The assembler, Octo, can be used to play the game from your browser, click <a href="http://johnearnest.github.io/Octo/index.html?gist=3355987134d5c4c94713">Ded-Lok</a></p>
 		  <br>
 		  <h4>My Story</h4>
-		  <p>I programmed all parts of the game in Unity3D as this was an individual project. I am really fascinated with game AI, hence this was my 'golden child'. The guards can perform Breadth First Search as seen in video 2.</p>
+		  <p>I was introduced to octojam by a friend. When I read about Chip8, I felt challenged and excited. Chip8 only has 16 registers to work with, only 35 instructions to use and a limit of 3.5kb, as the COSMAC VIP was so old. I was able to pull it off in 2 days, resulting in Ded-Lok, a 468 byte game.</p>
 
 		  <br>
 		  <h4>Tools used</h4>
 		  <ul>
-			<li>Unity3D</li>
+			Plain text editor (Emacs)
 		  </ul>
 
 		  <br>
 		  <h4>Source Code</h4>
-		  <p>Link to project on github <a href="https://github.com/ParityB1t/Unnamed-Stealth-Game">Unnamed Stealth Game</a></p>
+		  <p>Link to project on github <a href="https://github.com/ParityB1t/Unnamed-Stealth-Game">Ded-Lok</a></p>
+		  <p>As pointed out in the video, there is a bug that can causes stack overflow. This is currently being debugged. Once the game is fixed, the git repo will be updated.</p>
 		</div>
 		
 		<div class="col-lg-4 col-lg-offset-1">
 		  <div class="spacing"></div>
 		  <h4>Project Details</h4>
 		  <div class="hline"></div>
-		  <p><b>Date:</b> December, 2014 - March 2015</p>
-		  <p><b>Team:</b> Individual Project</p>
+		  <p><b>Date:</b> November 2015</p>
+		  <p><b>Team:</b> Individual Project (Game Jam)</p>
 		  <table>
 			<tr>
 			  <td><small>Programmer:</small></td>
@@ -116,22 +137,21 @@
 			</tr>
 			<tr>
 			  <td><small>Artist:</small></td>
-			  <td>Hung Hoang + <a href="http://opengameart.org">opengameart.org</a></td>
-			</tr>
-			<tr>
-			  <td><small>Designer:</small></td>
 			  <td>Hung Hoang</td>
-			</tr>
-			<tr>
-			  <td><small>Sound:</small></td>
-			  <td><a href="https://www.freesound.org">Free Sound Project</a></td>
 			</tr>
 		  </table>
 		  </>
 		  <p><b>Type:</b> PC Game</p>
-		  <p><b>Genre:</b> Stealth, Platformer</p>
+		  <p><b>Genre:</b> Shooter, Arcade</p>
 		  <p><b>Website:</b> Here!</p>
 		</div>
+
+		<br>
+
+		<div class="col-lg-4 centered col-lg-offset-0">
+		  <iframe width="560" height="315" src="https://www.youtube.com/embed/fxPoscaB8aE#start=4000" frameborder="0" allowfullscreen></iframe>
+		</div>			
+
 		
 	  </div><! --/row -->
 	</div><! --/container -->
