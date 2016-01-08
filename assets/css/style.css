@@ -227,12 +227,12 @@ a:focus {
 }
 
 /* Services Wrap */
-#service {
+#statement {
 	margin-top: 100px;
 	margin-bottom: 80px;
 }
 
-#service i {
+#statement i {
 	color: #00b3fe;
 	font-size: 60px;
 	padding: 15px;
@@ -281,8 +281,8 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:#00b3fe;
-	background-color:rgba(0,179,254,.9);
+	background-color:#000;
+	background-color:rgba(0,0,0,.9);
 	text-align:center;
 }
 
