@@ -213,6 +213,9 @@
     <script>
 	// Portfolio
 	(function($) {
+
+	  $('#portfolio-bar').load('portfolio-bar.html');
+	  
 	  "use strict";
 	  var $container = $('.portfolio'),
 		$items = $container.find('.portfolio-item'),
@@ -291,11 +294,6 @@
 		setPortfolio();          
 	  });
 	})(jQuery);
-
-	$(document).ready(function()
-	  {
-		$('#portfolio-bar').load('portfolio-bar.html');
-	  });
 	</script>
   </body>
 </html>
