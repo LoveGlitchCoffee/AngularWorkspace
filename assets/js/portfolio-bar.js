@@ -1,7 +1,5 @@
-function buildPortfolio()
-{
   
-  document.write('	<div id="black">
+var element = '	<div id="black">
 <div id="portfoliowrap">
 <h3>LATEST PROJECTS</h3>
 <div class="portfolio-centered">
@@ -49,5 +47,5 @@ function buildPortfolio()
 </div><!-- portfolio -->
 </div><!-- portfolio container -->
 </div><!--/Portfoliowrap -->
-</div>	');
-}
+</div>	';
+
