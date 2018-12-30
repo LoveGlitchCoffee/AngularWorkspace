@@ -1,15 +1,27 @@
 import { Component, OnInit } from '@angular/core';
+import { Piece } from "../piece";
+import { PieceService } from "../piece.service";
+
+const img_folder = '../assets/img';
 
 @Component({
-  selector: 'app-piece',
-  templateUrl: './piece.component.html',
-  styleUrls: ['./piece.component.css']
+    selector: 'app-piece',
+    templateUrl: './piece.component.html',
+    styleUrls: ['./piece.component.css']
 })
 export class PieceComponent implements OnInit {
 
-  constructor() { }
+    // test
+    pieces: Piece[];
 
-  ngOnInit() {
-  }
+    constructor(private pieceService: PieceService) { }
+
+    ngOnInit() {
+        this.getPieces();
+    }
+
+    getPieces(): void {
+        this.pieceService.getPieces().subscribe(pieces => this.pieces = pieces)
+    }
 
 }

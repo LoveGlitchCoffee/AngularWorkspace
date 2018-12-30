@@ -4,11 +4,13 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
 import { AppComponent } from './app.component';
 import { PieceComponent } from '../piece/piece.component';
+import { LinkbarComponent } from '../linkbar/linkbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PieceComponent,    
+    PieceComponent,
+    LinkbarComponent,    
   ],
   imports: [
       BrowserModule,

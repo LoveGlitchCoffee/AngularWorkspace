@@ -1,3 +1,10 @@
-<p>
-  piece works!
-</p>
+<div class="container">
+    <div class="card-columns">
+        <div *ngFor="let piece of pieces" class="card">
+            <img class="card-img-top" src="{{piece.imagePath}}" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title">{{piece.name}}</h5>
+            </div>
+        </div>
+    </div>
+</div>
