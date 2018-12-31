@@ -1,8 +1,11 @@
+/* flex helps stuff inside wrapper always fill 100% */
 .wrapper {
     display: flex;
     width: 100%;
 }
 
+/* width is arbritary */
+/* using right: 0 to make right-aligned */
 #sidebar {
     width: 250px;
     position: fixed;
@@ -15,10 +18,12 @@
     transition: all 0.3s;
 }
 
-#sidebar.active {
+/* completely off screen when hidden */
+#sidebar.hidden {
     margin-right: -250px;
 }
 
+/* make space for nav bar to the right (-) */
 #content {
     width: calc(100% - 250px);
     transition: all 0.3s;
@@ -28,6 +33,7 @@
     left: 0;
 }
 
-#content.active {
+/* content takes up full screen */
+#content.hidden {
     width: 100%;
 }
