@@ -13,6 +13,8 @@ export class LinkbarComponent implements OnInit {
     ngOnInit() {
         // jquery
         $(document).ready(function () {
+            // custom scrollbar for fixed sidebar
+            // https://bootstrapious.com/p/bootstrap-sidebar - tutorial for fixed sidebar
             $('#sidebar').mCustomScrollbar({
                 theme: "minimal"
             });

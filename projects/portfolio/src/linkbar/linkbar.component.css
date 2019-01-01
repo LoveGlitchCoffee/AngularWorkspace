@@ -13,9 +13,12 @@
     right: 0;
     height: 100vh;
     z-index: 999;
-    background: #7386D5;
+    background: rgb(165, 0, 102);
     color: #fff;
     transition: all 0.3s;
+    text-align: center;
+    font-size: 30px;
+    padding: 10%;
 }
 
 /* completely off screen when hidden */
@@ -29,7 +32,6 @@
     transition: all 0.3s;
     position: absolute;
     padding: 40px;
-    top: 0;
     left: 0;
 }
 
