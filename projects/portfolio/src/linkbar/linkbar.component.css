@@ -1,3 +1,7 @@
+.navbar-borderless {
+    border-style: none;
+}
+
 /* flex helps stuff inside wrapper always fill 100% */
 .wrapper {
     display: flex;

@@ -1,36 +1,55 @@
 import { Injectable } from '@angular/core';
 import { Piece } from "./piece";
+import { Link } from "./link";
 import { Observable, of } from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class PieceService {
 
-    mockpiece: Piece;
-    mockpiece2: Piece;
-    mockpiece3: Piece;
-    mockpieces: Piece[];
+    dedlok: Piece;
+    outside: Piece;
+    pieces: Piece[];
+    gameSymbol: string = "fas fa-gamepad";
+    videoSymbol: string = "fas fa-video";
 
-    constructor() { 
-        this.mockpiece = <Piece>({
-            name: "something",
-            imagePath: "./assets/img/avatar.png"
-        });
-        
-        this.mockpiece2 = <Piece>({
-            name: "something else",
-            imagePath: "./assets/img/youthere.png"
+    constructor() {
+
+        this.dedlok = <Piece>({
+            name: "Ded-lok",
+            imagePath: "./assets/img/dedlok-icon.png",
+            desc: "Classic shooter.\nMade in Octo-Jam 2015.\nProgrammed in Chip8 assembly.",
+            links: [
+                {
+                    linkname: "play in browser",
+                    hyperlink: "http://johnearnest.github.io/Octo/index.html?gist=3355987134d5c4c94713",
+                    symbol: this.gameSymbol
+                },
+                {
+                    linkname: "jam review",
+                    hyperlink: "https://youtu.be/fxPoscaB8aE?t=3270",
+                    symbol: this.videoSymbol
+                }
+            ]
         })
-        this.mockpiece3 = <Piece>({
-            name: "something more",
-            imagePath: "./assets/img/uni.png"
+        this.outside = <Piece>({
+            name: "Outside",
+            imagePath: "./assets/img/outside-icon.png",
+            desc: "First Person Tower Defense Shooter.\nMade in Awful Jam 2016.\nMade with Unity.",
+            links: [
+                {
+                    linkname: "itch.io",
+                    hyperlink: "https://parityb1t.itch.io/outside",
+                    symbol: this.gameSymbol
+                }
+            ]
         })
 
-        this.mockpieces = [this.mockpiece, this.mockpiece2, this.mockpiece3];
+        this.pieces = [this.dedlok, this.outside];
     }
-    
+
     getPieces(): Observable<Piece[]> {
-        return of(this.mockpieces);
+        return of(this.pieces);
     }
 }

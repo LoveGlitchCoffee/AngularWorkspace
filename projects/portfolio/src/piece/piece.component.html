@@ -1,10 +1,18 @@
 <div class="container">
     <div class="card-columns">
-        <div *ngFor="let piece of pieces" class="card">
+
+        <div *ngFor="let piece of pieces" class="card border-primary mb-3">
+
             <img class="card-img-top" src="{{piece.imagePath}}" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">{{piece.name}}</h5>
+                <h4 class="card-title headline">{{piece.name}}</h4>
+                <p class="card-text" style="white-space:pre-line">{{piece.desc}}</p>
             </div>
+            <ul class="list-group list-group-flush">
+                <li *ngFor="let links of piece.links" class="pieceitem list-group-item"><a href="{{links.hyperlink}}"
+                        target="_blank"><i class="{{links.symbol}}"></i> {{links.linkname}}</a></li>
+            </ul>
         </div>
+
     </div>
 </div>
