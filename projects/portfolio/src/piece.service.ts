@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Piece } from "./piece";
-import { Link } from "./link";
 import { Observable, of } from "rxjs";
 
 @Injectable({
@@ -18,7 +17,7 @@ export class PieceService {
 
         this.dedlok = <Piece>({
             name: "Ded-lok",
-            imagePath: "./assets/img/dedlok-icon.png",
+            imagePath: "assets/img/dedlok-icon.png",
             desc: "Classic shooter.\nMade in Octo-Jam 2015.\nProgrammed in Chip8 assembly.",
             links: [
                 {
@@ -35,7 +34,7 @@ export class PieceService {
         })
         this.outside = <Piece>({
             name: "Outside",
-            imagePath: "./assets/img/outside-icon.png",
+            imagePath: "assets/img/outside-icon.png",
             desc: "First Person Tower Defense Shooter.\nMade in Awful Jam 2016.\nMade with Unity.",
             links: [
                 {

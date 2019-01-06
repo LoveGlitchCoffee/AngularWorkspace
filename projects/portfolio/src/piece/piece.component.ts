@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Piece } from "../piece";
 import { PieceService } from "../piece.service";
 
-const img_folder = '../assets/img';
-
 @Component({
     selector: 'app-piece',
     templateUrl: './piece.component.html',
