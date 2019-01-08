@@ -35,7 +35,7 @@
 }
 
 /* completely off screen when hidden */
-#sidebar.hidden {
+#sidebar.showSidebar {
     margin-right: -250px;
 }
 
@@ -49,6 +49,6 @@
 }
 
 /* content takes up full screen */
-#content.hidden {
+#content.showSidebar {
     width: 100%;
 }

@@ -1,6 +1,6 @@
 <div class="wrapper">
     <!-- Sidebar -->
-    <nav id="sidebar" class="hidden">
+    <nav id="sidebar" [ngClass]="sidebarShow ? '' : 'showSidebar'">
         <ul class="list-unstyled components">
             <li><a href="https://twitter.com/ParityB1t" target="_blank"><img src="assets/img/twitter.png" alt=""/></a></li>
             <li><a href="https://www.linkedin.com/in/hungvhoang/" target="_blank"><img src="assets/img/linkedin.png" alt=""/></a></li>
@@ -12,12 +12,12 @@
     </nav>
 
     <!-- Page Content -->
-    <div id="content" class="hidden">
+    <div id="content" [ngClass]="sidebarShow ? '' : 'showSidebar'">
         <nav class="navbar navbar-borderless">
             <a class="navbar-brand" href="#">
                 <h1>ParityB1t</h1>
             </a>
-            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <button type="button" class="btn btn-primary" (click)="sidebarCollapse()">
                 <span class="navbar-toggler-icon"><i class="fas fa-comment"></i></span>
             </button>
         </nav>
