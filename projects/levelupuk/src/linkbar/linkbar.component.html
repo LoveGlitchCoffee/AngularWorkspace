@@ -1,0 +1,25 @@
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar" [ngClass]="sidebarShow ? '' : 'showSidebar'">
+        <ul class="list-unstyled components">
+            <li><a href="https://twitter.com/ParityB1t" target="_blank"><img src="assets/img/twitter.png" alt="" /></a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Page Content -->
+    <div id="content" [ngClass]="sidebarShow ? '' : 'showSidebar'">
+        <nav class="navbar navbar-borderless">
+            <a class="navbar-brand" href="#">
+                <!-- empty to push sidebar to right-->
+            </a>
+            <button type="button" class="btn btn-primary" (click)="sidebarCollapse()">
+                <span class="navbar-toggler-icon"><i class="fas fa-comment"></i></span>
+            </button>
+        </nav>
+
+        <!-- hacky but works -->
+        <!-- Basically putting pieces here so can be inside content for responsive sidebar -->
+        <app-background></app-background>
+    </div>
+</div>

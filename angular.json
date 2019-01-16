@@ -129,6 +129,133 @@
           }
         }
       }
+    },
+    "levelupuk": {
+      "root": "projects/levelupuk/",
+      "sourceRoot": "projects/levelupuk/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/levelupuk",
+            "index": "projects/levelupuk/src/index.html",
+            "main": "projects/levelupuk/src/main.ts",
+            "polyfills": "projects/levelupuk/src/polyfills.ts",
+            "tsConfig": "projects/levelupuk/tsconfig.app.json",
+            "assets": [
+              "projects/levelupuk/src/favicon.ico",
+              "projects/levelupuk/src/assets"
+            ],
+            "styles": [
+              "projects/levelupuk/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "projects/levelupuk/src/environments/environment.ts",
+                  "with": "projects/levelupuk/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "levelupuk:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "levelupuk:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "levelupuk:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/levelupuk/src/test.ts",
+            "polyfills": "projects/levelupuk/src/polyfills.ts",
+            "tsConfig": "projects/levelupuk/tsconfig.spec.json",
+            "karmaConfig": "projects/levelupuk/karma.conf.js",
+            "styles": [
+              "projects/levelupuk/src/styles.css"
+            ],
+            "scripts": [],
+            "assets": [
+              "projects/levelupuk/src/favicon.ico",
+              "projects/levelupuk/src/assets"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/levelupuk/tsconfig.app.json",
+              "projects/levelupuk/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "levelupuk-e2e": {
+      "root": "projects/levelupuk-e2e/",
+      "projectType": "application",
+      "prefix": "",
+      "architect": {
+        "e2e": {
+          "builder": "@angular-devkit/build-angular:protractor",
+          "options": {
+            "protractorConfig": "projects/levelupuk-e2e/protractor.conf.js",
+            "devServerTarget": "levelupuk:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "levelupuk:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": "projects/levelupuk-e2e/tsconfig.e2e.json",
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "portfolio"

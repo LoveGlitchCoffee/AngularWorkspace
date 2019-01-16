@@ -1,0 +1,54 @@
+.navbar-borderless {
+    border-style: none;
+}
+
+/* flex helps stuff inside wrapper always fill 100% */
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+/* width is arbritary */
+/* using right: 0 to make right-aligned */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    z-index: 999;
+    background: rgb(56, 56, 56);
+    transition: all 0.3s;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 5%;
+    line-height: 2em;    
+}
+
+#sidebar li {
+    margin: 40px 0 10px 0;
+}
+
+#sidebar img {
+    max-width: 100%;
+    height: 50px;
+}
+
+/* completely off screen when hidden */
+#sidebar.showSidebar {
+    margin-right: -250px;
+}
+
+/* make space for nav bar to the right (-) */
+#content {
+    width: calc(100% - 250px);
+    transition: all 0.3s;
+    position: absolute;
+    padding: 40px;
+    left: 0;
+}
+
+/* content takes up full screen */
+#content.showSidebar {
+    width: 100%;
+}
