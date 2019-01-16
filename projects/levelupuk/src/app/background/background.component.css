@@ -1,4 +1,3 @@
-.bg {
-    background-image: ("/assets/img/logo_art.PNG");
-    background-repeat: no-repeat;    
+img {
+    max-width: 100%;
 }

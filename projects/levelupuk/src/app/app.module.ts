@@ -5,12 +5,14 @@ import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { AppComponent } from './app.component';
 import { BackgroundComponent } from './background/background.component';
 import { LinkbarComponent } from "../linkbar/linkbar.component";
+import { CountdownComponent } from './countdown/countdown.component';
 
 @NgModule({
   declarations: [
     AppComponent,
         BackgroundComponent,
-    LinkbarComponent
+    LinkbarComponent,
+    CountdownComponent
   ],
   imports: [
       BrowserModule,
