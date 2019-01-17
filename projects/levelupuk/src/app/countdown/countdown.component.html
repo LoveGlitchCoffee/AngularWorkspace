@@ -1,3 +1,16 @@
-<p>
-  countdown works!
-</p>
+<div class="text-center mt-5 mb-5">
+    <countdown [config]="config" class="flip-cd">
+        <div class="time">$!d!
+            <div class="label">Day</div>
+        </div>        
+        <div class="time">$!h!
+            <div class="label">Hours</div>
+        </div>
+        <div class="time">$!m!
+            <div class="label">Minutes</div>
+        </div>
+        <div class="time">$!s!
+            <div class="label">Seconds</div>
+        </div>
+    </countdown>
+</div>
