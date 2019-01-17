@@ -10,7 +10,7 @@ import { Config } from "ngx-countdown";
 export class CountdownComponent implements OnInit {
 
     config: Config = {
-        leftTime: (+(new Date(Date.UTC(2019, 2, 23))).getTime() - +(new Date(Date.UTC(2019, 1, 17))).getTime()) / 1000,
+        leftTime: (+(new Date(Date.UTC(2019, 1, 23))).getTime() - Date.now()) / 1000,
         repaint: function () {        
             const me: any = this;
             let content: string;
