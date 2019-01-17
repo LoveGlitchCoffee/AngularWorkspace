@@ -7,13 +7,15 @@ import { BackgroundComponent } from './background/background.component';
 import { LinkbarComponent } from "../linkbar/linkbar.component";
 import { CountdownComponent } from './countdown/countdown.component';
 import { CountdownModule } from "ngx-countdown";
+import { InfoComponent } from './info/info.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         BackgroundComponent,
         LinkbarComponent,
-        CountdownComponent        
+        CountdownComponent,
+        InfoComponent        
     ],
     imports: [
         BrowserModule,
