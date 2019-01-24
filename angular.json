@@ -146,7 +146,7 @@
             "polyfills": "projects/levelupuk/src/polyfills.ts",
             "tsConfig": "projects/levelupuk/tsconfig.app.json",
             "assets": [
-              "projects/levelupuk/src/favicon.ico",
+              "projects/levelupuk/src/luuk.ico",
               "projects/levelupuk/src/assets"
             ],
             "styles": [
@@ -210,7 +210,7 @@
             ],
             "scripts": [],
             "assets": [
-              "projects/levelupuk/src/favicon.ico",
+              "projects/levelupuk/src/luuk.ico",
               "projects/levelupuk/src/assets"
             ]
           }
