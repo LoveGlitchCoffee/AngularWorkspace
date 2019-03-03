@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Config } from "ngx-countdown";
-import datacfg from "assets/config.json";
+import datacfg from "../../assets/config.json";
 
 
 @Component({

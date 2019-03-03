@@ -148,7 +148,7 @@
             "assets": [
               "projects/levelupuk/src/luuk.ico",
               "projects/levelupuk/src/assets",
-              "projects/levelupuk/CNAME"
+              "projects/levelupuk/src/CNAME"
             ],
             "styles": [
               "projects/levelupuk/src/styles.css"
