@@ -147,7 +147,8 @@
             "tsConfig": "projects/levelupuk/tsconfig.app.json",
             "assets": [
               "projects/levelupuk/src/luuk.ico",
-              "projects/levelupuk/src/assets"
+              "projects/levelupuk/src/assets",
+              "projects/levelupuk/CNAME"
             ],
             "styles": [
               "projects/levelupuk/src/styles.css"

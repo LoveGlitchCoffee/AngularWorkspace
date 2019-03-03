@@ -1,4 +1,4 @@
-<div class="text-center mt-5 mb-5">
+<div *ngIf="showCountdown" class="text-center mt-5 mb-5">
     <countdown [config]="config" class="flip-cd">
         <div class="time">$!d!
             <div class="label">Day</div>
@@ -14,6 +14,6 @@
         </div>
     </countdown>
 </div>
-<div class="text-center event-name">
-    <a href="https://levelupukconf.eventbrite.co.uk/">Level Up UK meetup</a>
+<div *ngIf="showCountdown" class="text-center event-name">
+    <a href="{{eventLink}}" target="_blank">{{eventName}}</a>
 </div>

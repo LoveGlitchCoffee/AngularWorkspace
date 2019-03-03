@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Config } from "ngx-countdown";
+import datacfg from "assets/config.json";
+
 
 @Component({
     selector: 'app-countdown',
@@ -7,10 +9,14 @@ import { Config } from "ngx-countdown";
     styleUrls: ['./countdown.component.css'],
     encapsulation: ViewEncapsulation.None
 })
-export class CountdownComponent implements OnInit {
+export class CountdownComponent implements OnInit {    
 
-    config: Config = {
-        leftTime: (+(new Date(Date.UTC(2019, 1, 23))).getTime() - Date.now()) / 1000,
+    showCountdown: boolean;
+    eventName: string;
+    eventLink: string;
+
+    config: Config = {        
+        leftTime: (+(new Date(Date.UTC(datacfg.CountTo.Year, datacfg.CountTo.Month, datacfg.CountTo.Day))).getTime() - Date.now()) / 1000,
         repaint: function () {        
             const me: any = this;
             let content: string;
@@ -38,7 +44,10 @@ export class CountdownComponent implements OnInit {
     
     constructor() { }
 
-    ngOnInit() {        
+    ngOnInit() {                
+        this.showCountdown = datacfg.Countdown;
+        this.eventName = datacfg.CountEvent.Name;
+        this.eventLink = datacfg.CountEvent.Link;
     }
 
 }

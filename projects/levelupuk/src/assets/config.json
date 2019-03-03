@@ -1,0 +1,14 @@
+{
+    "Countdown": true,
+    "CountTo": 
+    {
+        "Year": 2019,
+        "Month": 2,
+        "Day": 23
+    },
+    "CountEvent":
+    {
+        "Name": "Level Up UK Meetup",
+        "Link": "https://levelupukconf.eventbrite.co.uk/"
+    }    
+}
