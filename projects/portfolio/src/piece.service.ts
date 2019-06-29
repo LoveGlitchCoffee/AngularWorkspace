@@ -9,6 +9,8 @@ export class PieceService {
 
     dedlok: Piece;
     outside: Piece;
+    companions: Piece;
+    oblivion: Piece;
     pieces: Piece[];
     gameSymbol: string = "fas fa-gamepad";
     videoSymbol: string = "fas fa-video";
@@ -44,8 +46,31 @@ export class PieceService {
                 }
             ]
         })
-
-        this.pieces = [this.dedlok, this.outside];
+        this.oblivion = <Piece>({
+            name: "Oblivion++",
+            imagePath: "assets/img/oblivion.png",
+            desc: "Oblivion theme, by Palo Borelli, made specifically for C++ in VSCode. Made in 2018",
+            links: [
+                {
+                    linkname: "Marketplace",
+                    hyperlink: "https://marketplace.visualstudio.com/items?itemName=parityb1t.oblivion",
+                    symbol: this.gameSymbol
+                }
+            ]
+        })
+        this.companions = <Piece>({
+            name: "Oblivion++",
+            imagePath: "assets/img/oblivion.png",
+            desc: "Oblivion theme, by Palo Borelli, made specifically for C++ in VSCode.",
+            links: [
+                {
+                    linkname: "Marketplace",
+                    hyperlink: "https://marketplace.visualstudio.com/items?itemName=parityb1t.oblivion",
+                    symbol: this.gameSymbol
+                }
+            ]
+        })
+        this.pieces = [this.dedlok, this.outside, this.oblivion];
     }
 
     getPieces(): Observable<Piece[]> {
