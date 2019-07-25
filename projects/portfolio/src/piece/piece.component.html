@@ -1,9 +1,16 @@
 <div class="container">
     <div class="card-columns">
 
-        <div *ngFor="let piece of pieces" class="card border-primary mb-3">
-
-            <img class="card-img-top" src="{{piece.imagePath}}" alt="Card image cap">
+        <div *ngFor="let piece of pieces" class="card border-primary">
+            <div class="card-image">
+                <div *ngIf="piece.hasVideo; else showImage" class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" [src]="piece.video | safe" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <ng-template #showImage>
+                    <img class="card-img-top" src="{{piece.imagePath}}" alt="Card image cap">
+                </ng-template>
+            </div>
             <div class="card-body">
                 <h4 class="card-title headline">{{piece.name}}</h4>
                 <p class="card-text" style="white-space:pre-line">{{piece.desc}}</p>

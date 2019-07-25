@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 
-import { AppComponent } from './app.component';
+import { AppComponent, SafePipe } from './app.component';
 import { PieceComponent } from '../piece/piece.component';
 import { LinkbarComponent } from '../linkbar/linkbar.component';
 
@@ -10,7 +10,8 @@ import { LinkbarComponent } from '../linkbar/linkbar.component';
   declarations: [
     AppComponent,
     PieceComponent,
-    LinkbarComponent,    
+    LinkbarComponent,
+    SafePipe
   ],
   imports: [
       BrowserModule,

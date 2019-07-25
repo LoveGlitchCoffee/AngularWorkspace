@@ -20,7 +20,9 @@ export class PieceService {
         this.dedlok = <Piece>({
             name: "Ded-lok",
             imagePath: "assets/img/dedlok-icon.png",
-            desc: "Classic shooter.\nMade in Octo-Jam 2015.\nProgrammed in Chip8 assembly.",
+            video: "",
+            hasVideo: false,
+            desc: "Programmed in Chip8 assembly.\nClassic shooter made in Octo-Jam 2015.\n",
             links: [
                 {
                     linkname: "play in browser",
@@ -37,7 +39,9 @@ export class PieceService {
         this.outside = <Piece>({
             name: "Outside",
             imagePath: "assets/img/outside-icon.png",
-            desc: "First Person Tower Defense Shooter.\nMade in Awful Jam 2016.\nMade with Unity.",
+            video: "https://www.youtube.com/embed/wtVud_zwvTs",
+            hasVideo: true,
+            desc: "A zombie shooter where you play as an old man.\nMade in Awful Jam 2016.\nMade with Unity.",
             links: [
                 {
                     linkname: "itch.io",
@@ -49,7 +53,9 @@ export class PieceService {
         this.oblivion = <Piece>({
             name: "Oblivion++",
             imagePath: "assets/img/oblivion.png",
-            desc: "Oblivion theme, by Palo Borelli, made specifically for C++ in VSCode. Made in 2018",
+            video: "",
+            hasVideo: false,
+            desc: "Oblivion theme, by Palo Borelli, made specifically for C++ in VSCode.\n Made in 2018.",
             links: [
                 {
                     linkname: "Marketplace",
@@ -59,18 +65,20 @@ export class PieceService {
             ]
         })
         this.companions = <Piece>({
-            name: "Oblivion++",
-            imagePath: "assets/img/oblivion.png",
-            desc: "Oblivion theme, by Palo Borelli, made specifically for C++ in VSCode.",
+            name: "Companionship",
+            imagePath: "assets/img/dontstarve.jpg",
+            video: "https://www.youtube.com/embed/8uVbGPcr2Vo",
+            hasVideo: true,
+            desc: "Uses G(oal) O(oriented) A(ction) P(lanning) and Q-Learning.\n A mod for Don't Starve written in Lua.",
             links: [
                 {
-                    linkname: "Marketplace",
-                    hyperlink: "https://marketplace.visualstudio.com/items?itemName=parityb1t.oblivion",
+                    linkname: "Steam Marketplace",
+                    hyperlink: "https://steamcommunity.com/sharedfiles/filedetails/?id=1326647188",
                     symbol: this.gameSymbol
                 }
             ]
         })
-        this.pieces = [this.dedlok, this.outside, this.oblivion];
+        this.pieces = [ this.oblivion, this.companions, this.dedlok, this.outside,];
     }
 
     getPieces(): Observable<Piece[]> {
