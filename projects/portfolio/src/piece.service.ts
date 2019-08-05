@@ -78,7 +78,7 @@ export class PieceService {
                 }
             ]
         })
-        this.pieces = [ this.oblivion, this.companions, this.dedlok, this.outside,];
+        this.pieces = [ this.oblivion, this.companions, this.dedlok,];
     }
 
     getPieces(): Observable<Piece[]> {
