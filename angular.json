@@ -18,8 +18,7 @@
             "main": "projects/portfolio/src/main.ts",
             "polyfills": "projects/portfolio/src/polyfills.ts",
             "tsConfig": "projects/portfolio/tsconfig.app.json",
-            "assets": [
-              "projects/portfolio/src/favicon.ico",
+            "assets": [              
               "projects/portfolio/src/assets"
             ],
             "styles": [
