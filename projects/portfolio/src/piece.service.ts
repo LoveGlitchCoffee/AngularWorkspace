@@ -11,6 +11,7 @@ export class PieceService {
     outside: Piece;
     companions: Piece;
     oblivion: Piece;
+    overgem: Piece;
     pieces: Piece[];
     gameSymbol: string = "fas fa-gamepad";
     videoSymbol: string = "fas fa-video";
@@ -78,7 +79,21 @@ export class PieceService {
                 }
             ]
         })
-        this.pieces = [ this.oblivion, this.companions, this.dedlok,];
+        this.overgem = <Piece>({
+            name: "OverGem",
+            imagePath: "assets/img/overgem.jpg",
+            video: "",
+            hasVideo: false,
+            desc: "A 2-4 player couch competitive platformer.\n Currently in Alpha.\n Made with Unity.",
+            links: [
+                {
+                    linkname: "Alpha gameplay",
+                    hyperlink: "https://www.youtube.com/watch?v=G3RszuFyCbY",
+                    symbol: this.videoSymbol
+                }
+            ]
+        })
+        this.pieces = [ this.overgem, this.oblivion, this.companions, this.dedlok];
     }
 
     getPieces(): Observable<Piece[]> {
