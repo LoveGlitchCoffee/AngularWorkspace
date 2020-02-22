@@ -12,6 +12,7 @@ export class PieceService {
     companions: Piece;
     oblivion: Piece;
     overgem: Piece;
+    fancycats: Piece;
     pieces: Piece[];
     gameSymbol: string = "fas fa-gamepad";
     videoSymbol: string = "fas fa-video";
@@ -34,20 +35,6 @@ export class PieceService {
                     linkname: "jam review",
                     hyperlink: "https://youtu.be/fxPoscaB8aE?t=3270",
                     symbol: this.videoSymbol
-                }
-            ]
-        })
-        this.outside = <Piece>({
-            name: "Outside",
-            imagePath: "assets/img/outside-icon.png",
-            video: "https://www.youtube.com/embed/wtVud_zwvTs",
-            hasVideo: true,
-            desc: "A zombie shooter where you play as an old man.\nMade in Awful Jam 2016.\nMade with Unity.",
-            links: [
-                {
-                    linkname: "itch.io",
-                    hyperlink: "https://parityb1t.itch.io/outside",
-                    symbol: this.gameSymbol
                 }
             ]
         })
@@ -88,12 +75,31 @@ export class PieceService {
             links: [
                 {
                     linkname: "Alpha gameplay",
-                    hyperlink: "https://www.youtube.com/watch?v=G3RszuFyCbY",
+                    hyperlink: "https://www.youtube.com/watch?v=LwmgkB33A_o&",
                     symbol: this.videoSymbol
+                },
+            ]
+        })
+        this.fancycats = <Piece>({
+            name: "FancyCats",
+            imagePath: "assets/img/fancycats.jpg",
+            video: "",
+            hasVideo: false,
+            desc: "Gameplay Programmer whilst at GENiX Lab.\nMade with Unity.\nCat grooming match-3.",
+            links: [
+                {
+                    linkname: "Gameplay",
+                    hyperlink: "https://www.youtube.com/watch?v=LhycRf23hq4",
+                    symbol: this.videoSymbol
+                },
+                {
+                    linkname: "App Store",
+                    hyperlink: "https://apps.apple.com/us/app/fancy-cats-puzzle-kitties/id1235375776",
+                    symbol: this.gameSymbol
                 }
             ]
         })
-        this.pieces = [ this.overgem, this.oblivion, this.companions, this.dedlok];
+        this.pieces = [this.overgem, this.fancycats, this.dedlok];
     }
 
     getPieces(): Observable<Piece[]> {

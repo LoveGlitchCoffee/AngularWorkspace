@@ -3,12 +3,12 @@
     "CountTo": 
     {
         "Year": 2019,
-        "Month": 2,
-        "Day": 28
+        "Month": 11,
+        "Day": 7
     },
     "CountEvent":
     {
-        "Name": "LevelUp UK goes to Rezzed - Saturday only (Click to pay for ticket £14. Leave name and email. Don't pay for goods/service)",
-        "Link": "https://paypal.me/parityb1t?locale.x=en_GB"
+        "Name": "LevelUp UK Meetup (Season of Jams Finale)",
+        "Link": "https://levelupuksoj.eventbrite.co.uk/"
     }    
 }
