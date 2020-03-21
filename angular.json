@@ -19,7 +19,8 @@
             "polyfills": "projects/portfolio/src/polyfills.ts",
             "tsConfig": "projects/portfolio/tsconfig.app.json",
             "assets": [              
-              "projects/portfolio/src/assets"
+              "projects/portfolio/src/assets",
+              "projects/portfolio/src/CNAME"
             ],
             "styles": [
               "projects/portfolio/src/styles.css"
