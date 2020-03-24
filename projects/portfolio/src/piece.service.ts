@@ -21,18 +21,18 @@ export class PieceService {
 
         this.dedlok = <Piece>({
             name: "Ded-lok",
-            imagePath: "assets/img/dedlok-icon.png",
+            imagePath: "assets/img/dedlok-gameplay.png",
             video: "",
             hasVideo: false,
-            desc: "Programmed in Chip8 assembly.\nClassic shooter made in Octo-Jam 2015.\n",
+            desc: "Programmed in Chip8 assembly.\nClassic shooting game against AI.\nMade in Octo-Jam 2015.\n",
             links: [
                 {
-                    linkname: "play in browser",
+                    linkname: "Play In Browser",
                     hyperlink: "http://johnearnest.github.io/Octo/index.html?gist=3355987134d5c4c94713",
                     symbol: this.gameSymbol
                 },
                 {
-                    linkname: "jam review",
+                    linkname: "Jam Review",
                     hyperlink: "https://youtu.be/fxPoscaB8aE?t=3270",
                     symbol: this.videoSymbol
                 }
@@ -56,13 +56,18 @@ export class PieceService {
             name: "Companionship",
             imagePath: "assets/img/dontstarve.jpg",
             video: "https://www.youtube.com/embed/8uVbGPcr2Vo",
-            hasVideo: true,
+            hasVideo: false,
             desc: "Uses G(oal) O(oriented) A(ction) P(lanning) and Q-Learning.\n A mod for Don't Starve written in Lua.",
             links: [
                 {
                     linkname: "Steam Marketplace",
                     hyperlink: "https://steamcommunity.com/sharedfiles/filedetails/?id=1326647188",
                     symbol: this.gameSymbol
+                },
+                {
+                    linkname: "Gameplay",
+                    hyperlink: "https://www.youtube.com/watch?v=8uVbGPcr2Vo",
+                    symbol: this.videoSymbol
                 }
             ]
         })
@@ -71,25 +76,25 @@ export class PieceService {
             imagePath: "assets/img/overgem.jpg",
             video: "",
             hasVideo: false,
-            desc: "A 2-4 player couch competitive platformer.\n Currently in Alpha.\n Made with Unity.",
+            desc: "PvP Platformer.\nCouch competitive party game.\nCurrently in Alpha.\nMade with Unity.",
             links: [
                 {
-                    linkname: "Alpha gameplay",
+                    linkname: "Alpha Gameplay",
                     hyperlink: "https://www.youtube.com/watch?v=LwmgkB33A_o&",
                     symbol: this.videoSymbol
                 },
             ]
         })
         this.fancycats = <Piece>({
-            name: "FancyCats",
-            imagePath: "assets/img/fancycats.jpg",
+            name: "Fancy Cats",
+            imagePath: "assets/img/fancycats_gameplay.png",
             video: "",
             hasVideo: false,
             desc: "Gameplay Programmer whilst at GENiX Lab.\nMade with Unity.\nCat grooming match-3.",
             links: [
                 {
-                    linkname: "Gameplay",
-                    hyperlink: "https://www.youtube.com/watch?v=LhycRf23hq4",
+                    linkname: "Trailer",
+                    hyperlink: "https://www.youtube.com/watch?v=mMqo3uFpjH4",
                     symbol: this.videoSymbol
                 },
                 {
@@ -99,7 +104,7 @@ export class PieceService {
                 }
             ]
         })
-        this.pieces = [this.overgem, this.fancycats, this.dedlok];
+        this.pieces = [this.overgem, this.companions, this.dedlok, this.fancycats];
     }
 
     getPieces(): Observable<Piece[]> {
